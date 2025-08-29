@@ -1,0 +1,142 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-links { 
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+header {
+    display: flex;
+    margin-top: 35px;
+    gap: 50px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.titre {
+    color: #1742BC;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.bouton {
+    background-color: #1742BC;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#projects {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.line-contact {
+    display: flex;
+}
+
+.line-contact h2, .line-contact label
+{
+    width: 350px;
+    margin: 10px 0;
+    height: 30px;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+}
+
+#bouton-validation {
+    width: 258px;
+    height: 30px;
+    background: #1742BC;
+    color: white;
+    border: none;
+}
+
+form {
+    margin: auto;
+    width: fit-content;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    height: 30px;
+}
+
+#about {
+    text-align: center;
+}
+
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#services div {
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+
+@media (max-width: 625px) {
+    .line-contact h2, .line-contact label {
+        width: 250px;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    #bouton-validation {
+        width: 208px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #services {
+        flex-direction: column;
+    }
+}
